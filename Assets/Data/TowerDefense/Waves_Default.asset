@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bee9af91fa48a4cb6502488c44a7f4, type: 3}
+  m_Name: Waves_Default
+  m_EditorClassIdentifier: Assembly-CSharp::ARTD.WaveDefinition
+  spawnRadius: 385
+  spawnRadiusJitter: 0
+  waves:
+  - name: Wave 1
+    delayBefore: 3
+    groups:
+    - enemyPrefab: {fileID: 7359440055360145002, guid: 878aaadb94301fd428794d8ee638ff23,
+        type: 3}
+      count: 10
+      interval: 1
+    - enemyPrefab: {fileID: 6356371857675513572, guid: f0b46dbc149ab7b4d91e8591dd85bfa0,
+        type: 3}
+      count: 4
+      interval: 1
+  - name: Wave 2
+    delayBefore: 4
+    groups:
+    - enemyPrefab: {fileID: 7359440055360145002, guid: 878aaadb94301fd428794d8ee638ff23,
+        type: 3}
+      count: 14
+      interval: 0.7
+    - enemyPrefab: {fileID: 5712006496603883946, guid: a3164b298f0f54048840801014b8b09d,
+        type: 3}
+      count: 2
+      interval: 2
+    - enemyPrefab: {fileID: 6356371857675513572, guid: f0b46dbc149ab7b4d91e8591dd85bfa0,
+        type: 3}
+      count: 8
+      interval: 0.8
+  - name: Wave 3
+    delayBefore: 4
+    groups:
+    - enemyPrefab: {fileID: 7359440055360145002, guid: 878aaadb94301fd428794d8ee638ff23,
+        type: 3}
+      count: 18
+      interval: 0.55
+    - enemyPrefab: {fileID: 5712006496603883946, guid: a3164b298f0f54048840801014b8b09d,
+        type: 3}
+      count: 4
+      interval: 1.5
+    - enemyPrefab: {fileID: 4625712617462194776, guid: 87a5fd14735b23045b637091a02bfd03,
+        type: 3}
+      count: 1
+      interval: 4
+    - enemyPrefab: {fileID: 6356371857675513572, guid: f0b46dbc149ab7b4d91e8591dd85bfa0,
+        type: 3}
+      count: 10
+      interval: 0.8
+  - name: Wave 4
+    delayBefore: 4
+    groups:
+    - enemyPrefab: {fileID: 5712006496603883946, guid: a3164b298f0f54048840801014b8b09d,
+        type: 3}
+      count: 4
+      interval: 1.2
+    - enemyPrefab: {fileID: 7359440055360145002, guid: 878aaadb94301fd428794d8ee638ff23,
+        type: 3}
+      count: 24
+      interval: 0.45
+    - enemyPrefab: {fileID: 5712006496603883946, guid: a3164b298f0f54048840801014b8b09d,
+        type: 3}
+      count: 4
+      interval: 1.2
+    - enemyPrefab: {fileID: 4625712617462194776, guid: 87a5fd14735b23045b637091a02bfd03,
+        type: 3}
+      count: 2
+      interval: 4
+    - enemyPrefab: {fileID: 6356371857675513572, guid: f0b46dbc149ab7b4d91e8591dd85bfa0,
+        type: 3}
+      count: 12
+      interval: 0.8
+  - name: Wave 5 (Boss)
+    delayBefore: 5
+    groups:
+    - enemyPrefab: {fileID: 7359440055360145002, guid: 878aaadb94301fd428794d8ee638ff23,
+        type: 3}
+      count: 20
+      interval: 0.35
+    - enemyPrefab: {fileID: 5712006496603883946, guid: a3164b298f0f54048840801014b8b09d,
+        type: 3}
+      count: 10
+      interval: 0.8
+    - enemyPrefab: {fileID: 7359440055360145002, guid: 878aaadb94301fd428794d8ee638ff23,
+        type: 3}
+      count: 20
+      interval: 0.35
+    - enemyPrefab: {fileID: 4625712617462194776, guid: 87a5fd14735b23045b637091a02bfd03,
+        type: 3}
+      count: 3
+      interval: 4
+    - enemyPrefab: {fileID: 6356371857675513572, guid: f0b46dbc149ab7b4d91e8591dd85bfa0,
+        type: 3}
+      count: 15
+      interval: 0.8
+  endless: 0
+  loopCountMultiplier: 1.3
+  loopHealthMultiplier: 1.2

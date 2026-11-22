@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5426062125732876685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3415308943801955805}
+  - component: {fileID: 837156171046394845}
+  - component: {fileID: 2824342648294171850}
+  - component: {fileID: 5297211025265713730}
+  - component: {fileID: 2458423603239029376}
+  m_Layer: 0
+  m_Name: pen_image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3415308943801955805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426062125732876685}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7433260332244028469}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837156171046394845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426062125732876685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: marker_a
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/pen_A.xml
+  mAspectRatio: 1
+  mImageTargetType: 0
+  mWidth: 100
+  mHeight: 100
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 5297211025265713730}
+--- !u!114 &2824342648294171850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426062125732876685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VuforiaScripts::DefaultObserverEventHandler
+  StatusFilter: 1
+  UsePoseSmoothing: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 3.3333333
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 3.3333333
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  OnTargetFound:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5297211025265713730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426062125732876685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 837156171046394845}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: marker_a
+  mDatasetName: Vuforia/pen_A.xml
+  mCastedBehaviour: {fileID: 837156171046394845}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &2458423603239029376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426062125732876685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed3882f2898328845b9f2fbd111acc1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARTD.MarkerPlacer
+  placeablePrefab: {fileID: 5040566550178812865, guid: e18480b403b2a134c94ea9da15e91bcc,
+    type: 3}
+  currentPreview: {fileID: 5827442493740341955}
+  maxPlacements: 0
+  acceptExtendedTracked: 0
+  hidePreviewWhenNotTracked: 1
+  debugAlwaysTracked: 0
+--- !u!1001 &1525748859156236546
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3415308943801955805}
+    m_Modifications:
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.35508
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.35508
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964879605713139965, guid: e18480b403b2a134c94ea9da15e91bcc,
+        type: 3}
+      propertyPath: m_Name
+      value: Pen_Cannon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e18480b403b2a134c94ea9da15e91bcc, type: 3}
+--- !u!114 &5827442493740341955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5040566550178812865, guid: e18480b403b2a134c94ea9da15e91bcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1525748859156236546}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5bd1bf7858de0a45a56b57600eec2de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARTD.Placeable
+--- !u!4 &7433260332244028469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8215887760450340151, guid: e18480b403b2a134c94ea9da15e91bcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1525748859156236546}
+  m_PrefabAsset: {fileID: 0}

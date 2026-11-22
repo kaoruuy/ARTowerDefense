@@ -1,0 +1,65 @@
+# Unity-generated caches, build output, and local editor state
+/[Ll]ibrary/
+/[Tt]emp/
+/[Tt]mp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Ee]xportedObj/
+/[Qq][Cc][Aa][Rr]/
+
+# Unity Version Control and IDE-local files
+/.plastic/
+/.vs/
+/.vscode/
+/.idea/
+/.gradle/
+/.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Generated packages, diagnostics, and temporary files
+*.apk
+*.aab
+*.app
+*.unitypackage
+*.tmp
+*.log
+sysinfo.txt
+crashlytics-build.properties
+~UnityDirMonSyncFile~*
+/Assets/AssetStoreTools/
+/Assets/AssetStoreTools.meta
+/Assets/Plugins/PlasticSCM*
+/Assets/AddressableAssetsData/*/*.bin*
+/Assets/StreamingAssets/aa/
+/Assets/StreamingAssets/aa.meta
+
+# Local Vuforia configuration contains license keys.
+# Keep these files locally; configure keys separately on each checkout.
+/Assets/Resources/VuforiaConfiguration.asset
+/Assets/Resources/VuforiaConfiguration.asset.meta
+
+# OS metadata
+.DS_Store*
+Thumbs.db
+Desktop.ini
