@@ -113,3 +113,14 @@ Vuforiaのパッケージと大容量モデルはGit LFSで管理しています
 大容量ファイルのLFS設定は [.gitattributes](.gitattributes) にあります。
 
 Vuforiaのパッケージが読み込めない場合は、`git lfs pull` が成功していることと、パッケージの実体が取得できていることを確認してください。
+
+## 使用アセット・参考資料
+
+使用した主なアセットと、AR実装で参照した資料です。
+
+| 分類 | リソース・提供元 | 使用箇所・参考内容 |
+| --- | --- | --- |
+| 3Dモデル | [Pirate Kit — Quaternius](https://quaternius.com/packs/piratekit.html) | 海賊・敵キャラクター、宝箱、大砲、防壁、トラップドアなど。配布元のライセンス表記はCC0。 |
+| BGM | [民族22 — 魔王魂](https://maou.audio/bgm_ethnic22/) | ゲーム中のBGM。使用ファイル：`Assets/Resources/Audio/maou_bgm_ethnic22.mp3`。 |
+| 効果音 | 効果音ラボ：[戦闘](https://soundeffect-lab.info/sound/battle/) / [演出・アニメ](https://soundeffect-lab.info/sound/anime/) | 「剣で打ち合う2」「爆発1」「ぷよん」など。攻撃、破壊、生成や操作時の効果音。 |
+| AR技術資料 | [Image Targets — Vuforia Engine Library（PTC）](https://developer.vuforia.com/library/vuforia-engine/images-and-objects/image-targets/image-targets/) | 画像の自然特徴量に基づくマーカーの検出・追跡。 |
